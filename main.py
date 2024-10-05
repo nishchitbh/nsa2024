@@ -14,6 +14,10 @@ handler = ipinfo.getHandler(access_token)
 details = handler.getDetails()
 
 print(f"Latitude: {details.latitude}, Longitude: {details.longitude}")
-
-response = requests.get(f"https://soil.narc.gov.np/api/soildata?lat={details.latitude}&lon={details.longitude}")
-print(response.content)
+url = f"https://api.nasa.gov/planetary/earth/imagery?lon={details.longitude}&lat={details.latitude}&dim=0.7&api_key={os.getenv('NASA_API')}"
+response = requests.get(url)
+print(url)
+# print(response.text)
+# print(response.content)
+with open("output_image.png", "wb") as file:
+    file.write(response.content)

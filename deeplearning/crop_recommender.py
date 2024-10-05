@@ -1,11 +1,13 @@
 import numpy as np
 import joblib
+import os
 
 # Load the saved model
-loaded_model = joblib.load('randomforest_model.pkl')
+model_path = os.path.join(os.getcwd(), 'deeplearning', 'randomforest_model.pkl')
+loaded_model = joblib.load(model_path)
 
 
-def predict(data: list):
+def predict(data):
     # Prepare the data (replace these values with your input)
     data_to_predict = data
 
@@ -16,4 +18,4 @@ def predict(data: list):
     predictions = loaded_model.predict(data_to_predict)
 
     # Print the predictions
-    return "Predicted value:", predictions[0]
+    return predictions[0]
