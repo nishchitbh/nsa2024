@@ -1,1 +1,89 @@
-/env
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Python egg files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+develop-eggs/
+.installed.cfg
+*.egg-info/
+
+# PyInstaller
+# Usually these files are written by a python script from a template
+# before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+.Python
+*.pyo
+
+# Pytest cache
+.pytest_cache/
+
+# Mypy
+.mypy_cache/
+
+# C extensions
+*.so
+
+# SQLite database
+*.sqlite3
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+
+# Alembic
+migrations/
+
+# Python package manager
+*.lock
+Pipfile
+Pipfile.lock
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Other generated files
+*.out
+*.log
+*.txt
+
+# Docker files
+docker-compose.override.yml
+
+# FastAPI static files and generated HTML
+/static/
+*.html
