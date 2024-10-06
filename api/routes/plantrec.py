@@ -1,4 +1,4 @@
-from fastapi import status, HTTPException, Depends, APIRouter
+from fastapi import status, APIRouter
 from ..schema import Weather
 from deeplearning import crop_recommender
 

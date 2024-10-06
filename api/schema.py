@@ -7,3 +7,7 @@ class Weather(BaseModel):
     K: int
     temperature: float
     humidity: float
+
+class Coordinates(BaseModel):
+    lat:float
+    long:float

@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .routes import mainpage, plantrec
+from .routes import mainpage, plantrec, weatherdata
 from fastapi.middleware.cors import CORSMiddleware
 
 
@@ -13,3 +13,4 @@ app.add_middleware(
 )
 app.include_router(mainpage.route)
 app.include_router(plantrec.route)
+app.include_router(weatherdata.route)
