@@ -58,7 +58,7 @@ pandas==2.2.3
 pathlib2==2.3.7.post1
 pillow==10.4.0
 protobuf==4.25.5
-psycopg2==2.9.9
+psycopg2-binary==2.9.9
 pydantic==2.9.2
 pydantic-extra-types==2.9.0
 pydantic-settings==2.5.2
