@@ -40,11 +40,11 @@ def local_index(coordinate):
 
         # Print the lists
         json_data = {
-            "soil_moisture_index_-10cm:idx": df["soil_moisture_index_-10cm:idx"].tolist(),
-            "drought_index:idx": df["drought_index:idx"].tolist(),
-            "temperature_2m:C": df["t_2m:C"].tolist(),
-            "evapotranspiration_1h:mm": df["evapotranspiration_1h:mm"].tolist(),
-            "rainfall_1h:mm": df["precip_1h:mm"].tolist()
+            "soil_moisture_index": df["soil_moisture_index_-10cm:idx"].tolist(),
+            "drought_index": df["drought_index:idx"].tolist(),
+            "temperature": df["t_2m:C"].tolist(),
+            "evapotranspiration": df["evapotranspiration_1h:mm"].tolist(),
+            "rainfall": df["precip_1h:mm"].tolist()
         }
         # The returned DataFrame is already in the desired format
         return json_data

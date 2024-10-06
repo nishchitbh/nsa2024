@@ -7,7 +7,6 @@ route = APIRouter(tags=['Crop Recommendation'])
 
 @route.post("/plantrec", status_code=status.HTTP_200_OK)
 def recommendation(localdata: Weather):
-    print(localdata)
     N = localdata.N
     P = localdata.P
     K = localdata.K
